@@ -1,4 +1,4 @@
-const getMultiplicationTable = require('../printReceipt.js');
+const prinReceipt = require('../printReceipt.js');
 
 const input = [
     'ITEM000001',
@@ -15,11 +15,11 @@ const input = [
 
 it('should print receipt like this', ()=>{
     expect(prinReceipt(input)).toBe('***<store earning no money>Receipt ***\n'+
-    'Name: Sprite, Quantity: 6 bottles, Unit price: 3.00 (yuan), Subtotal: 12.00 (yuan)\n'+
+    'Name: Sprite, Quantity: 6 bottles, Unit price: 3.00 (yuan), Subtotal: 9.00 (yuan)\n'+
     'Name: Apple, Quantity: 2 kg, Unit price: 5.50 (yuan), Subtotal: 11.00 (yuan)\n'+
-    'Name: Noodles, Quantity: 3, Unit price: 4.50 (yuan), Subtotal: 9.00 (yuan)\n'+
+    'Name: Noodles, Quantity: 3 bags, Unit price: 4.50 (yuan), Subtotal: 9.00 (yuan)\n'+
     '----------------------\n'+
-    'Total: 32.00 (yuan)\n'+
-    'Saving: 10.50 (yuan)\n'+
-    '**********************')
-})
+    'Total: 29.00 (yuan)\n'+
+    'Saving: 13.50 (yuan)\n'+
+    '**********************');
+});
